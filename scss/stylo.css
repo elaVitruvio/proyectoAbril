@@ -1,7 +1,7 @@
 #superior {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -20,7 +20,7 @@
   text-decoration: none;
   color: black;
   font-style: bold;
-  font-size: 20px;
+  font-size: 18px;
 }
 #superior .superior__link .linkConsulta:hover {
   background: rgba(61, 90, 24, 0.733);
@@ -40,8 +40,8 @@
       align-self: center;
   font-size: 35px;
   color: black;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
   -webkit-animation-name: "tit";
           animation-name: "tit";
 }
@@ -50,10 +50,11 @@
   width: 22%;
 }
 #superior .superior__numero .num {
-  text-decoration: none;
   color: black;
-  font-size: 35px;
+  font-size: 25px;
   text-align: right;
+  padding-top: 0;
+  font-style: bold;
 }
 #superior .superior__numero .num:hover {
   -webkit-transform: translateX(-50px);
@@ -66,6 +67,9 @@
   #superior {
     height: 110px;
   }
+  #superior .superior__link .linkConsulta {
+    font-size: 15px;
+  }
   #superior .superior__titulo {
     margin-top: 3em;
   }
@@ -74,17 +78,6 @@
     font-size: 30px;
   }
 
-  .superior__link:hover {
-    background-color: rgba(61, 90, 24, 0.733);
-  }
-
-  .superior__numero {
-    margin-right: 0;
-    margin-top: 0;
-  }
-  .superior__numero .num {
-    padding: 0px;
-  }
   .superior__numero .num:hover {
     -webkit-transform: none;
             transform: none;
@@ -92,11 +85,8 @@
 }
 @media (max-width: 425px) {
   #superior {
-    height: auto;
+    height: 90px;
     width: auto;
-  }
-  #superior .superior__link {
-    background-color: rgba(111, 126, 212, 0.342);
   }
   #superior .superior__link .linkConsulta {
     font-size: 11px;
@@ -107,13 +97,6 @@
   #superior .superior__titulo .tit {
     font-size: 26px;
     padding: 0.5em;
-  }
-  #superior .superior__numero {
-    margin-right: 0;
-    margin-top: 0;
-  }
-  #superior .superior__numero .num {
-    font-size: 30px;
   }
 }
 .navB {
@@ -184,10 +167,12 @@
 }
 #servicios .servicios__cajon1 {
   grid-area: servicios__cajon1;
-  margin: 4em 0;
-  margin-left: 1.4em;
+  margin: 1em 1.4em 0.5em 0;
   background-color: rgba(61, 90, 24, 0.733);
   color: white;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 #servicios .servicios__cajon1 .bienvenida {
   font-size: 25px;
@@ -197,7 +182,7 @@
 #servicios .servicios__cajon1 .presentacion {
   font-size: 18px;
   font-style: italic;
-  text-align: center;
+  text-align: left;
   padding: 2em;
 }
 #servicios .servicios__cajon1 .presentacion a {
@@ -212,31 +197,26 @@
 }
 #servicios .servicios__cajon2 {
   grid-area: servicios__cajon2;
-  margin-top: 10em;
   margin-bottom: auto;
-  margin-right: 1.4em;
   background-color: rgba(61, 90, 24, 0.733);
   color: white;
   width: 238px;
 }
 #servicios .servicios__cajon2 .especialidades {
   text-align: center;
-  padding-top: 2em;
   background-color: rgba(61, 90, 24, 0.733);
   color: white;
 }
 #servicios .servicios__cajon2 .especialidades h3 {
-  font-size: 24px;
-  padding-top: 5px;
+  font-size: 28px;
+  padding-top: 1em;
   font-weight: bold;
 }
 #servicios .servicios__cajon2 #accordionFlushExample {
   padding: 5px;
   padding-top: 1.4em;
-  width: 238px;
 }
 #servicios .servicios__cajon2 #accordionFlushExample .accordion-item {
-  font-size: large;
   text-align: right;
   font-size: 18px;
   color: white;
@@ -246,7 +226,8 @@
   font-size: 18px;
   color: white;
   background-color: transparent;
-  border: 1px solid grey;
+  font-size: medium;
+  border: 1px solid rgba(55, 92, 7, 0.781);
 }
 #servicios .servicios__cajon2 #accordionFlushExample .accordion-collapse {
   font-size: 18px;
@@ -260,80 +241,98 @@
   height: max-content;
 }
 #servicios .servicios__cajon3 .row {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding-bottom: 1.4em;
+  -webkit-box-pack: stretch;
+      -ms-flex-pack: stretch;
+          justify-content: stretch;
 }
 #servicios .servicios__cajon3 .row #columna {
+  width: 33%;
   -ms-flex-item-align: end;
       align-self: flex-end;
-  -ms-flex-line-pack: center;
-      align-content: center;
+  padding: 3px;
 }
 #servicios .servicios__cajon3 .row #columna #tarjeta {
+  width: 100%;
   background-color: rgba(61, 90, 24, 0.733);
   color: white;
 }
 #servicios .servicios__cajon3 .row #columna #tarjeta .card-body {
-  padding: 4px;
-  -ms-flex-item-align: center;
-      align-self: center;
+  padding: 0.5em;
+  justify-items: center;
 }
 #servicios .servicios__cajon3 .row #columna #tarjeta .card-title {
   text-align: center;
-  font-size: 25px;
+  font-size: 1.4em;
 }
 #servicios .servicios__cajon3 .row #columna #tarjeta .card-text {
-  width: auto;
   text-align: center;
-  font-size: 18px;
+  font-size: 1em;
 }
 
 @media (max-width: 768px) {
-  #servicios .servicios__cajon3 {
-    display: none;
+  #servicios {
+    grid-template-areas: "servicios__cajon1 servicios__cajon2" "servicios__cajon1 servicios__cajon3";
+    grid-template-columns: 1fr 1fr;
   }
   #servicios .servicios__cajon1 {
-    width: 98%;
-    margin: 1.4em;
     padding: 0;
   }
-  #servicios .servicios__cajon2 {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    width: 98%;
-  }
-  #servicios .servicios__cajon2 #especialidades h3 {
+  #servicios .servicios__cajon1 .bienvenida {
     font-size: 20px;
+    padding: 1em;
+  }
+  #servicios .servicios__cajon1 .presentacion {
+    font-size: 18px;
+    font-style: italic;
+    text-align: center;
+    padding: 1em;
+  }
+  #servicios .servicios__cajon2 {
+    margin-top: 2em;
+    width: 88%;
+  }
+  #servicios .servicios__cajon2 .especialidades {
+    margin-right: 0;
+  }
+  #servicios .servicios__cajon2 .especialidades h3 {
+    font-size: 20px;
+  }
+  #servicios .servicios__cajon3 {
+    grid-area: servicios__cajon3;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+  }
+  #servicios .servicios__cajon3 .row {
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #servicios .servicios__cajon3 .row #columna {
+    padding: 4px;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+    width: 100%;
+  }
+  #servicios .servicios__cajon3 .row #columna #tarjeta {
+    width: 100%;
   }
 }
 @media (max-width: 425px) {
-  #servicios .servicios__cajon1 {
-    margin-left: 1.4em;
-    margin-top: 4em;
-    margin-bottom: 4em;
-  }
-  #servicios .servicios__cajon1 .bienvenida {
-    font-size: 15px;
-  }
   #servicios .servicios__cajon1 .presentacion {
     padding: 0;
     font-size: 13px;
   }
-  #servicios .servicios__cajon2 {
-    margin-top: 6em;
-    padding: 2px;
-  }
-  #servicios .servicios__cajon2 #especialidades h3 {
-    font-size: 17px;
+  #servicios .servicios__cajon2 .especialidades h3 {
+    font-size: 15px;
     text-align: center;
-    padding-top: 2em;
+  }
+  #servicios .servicios__cajon3 {
+    display: none;
   }
 }
 @media (max-width: 768px) {
@@ -392,7 +391,7 @@ body .pie {
   color: white;
   background: rgba(55, 92, 7, 0.781);
   z-index: -1;
-  padding-top: 1em;
+  padding-top: 0.5em;
   font-style: italic;
   font-size: 15px;
 }

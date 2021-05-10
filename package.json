@@ -1,0 +1,23 @@
+{
+  "name": "proyectoabril",
+  "version": "1.0.0",
+  "description": "Llegando al final",
+  "main": "index.js",
+  "scripts": {
+    "limpiacss": "purgecss --css ./css/bootstrap.min.css --content *.html --output ./dist/css/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elaVitruvio/proyectoAbril.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/elaVitruvio/proyectoAbril/issues"
+  },
+  "homepage": "https://github.com/elaVitruvio/proyectoAbril#readme",
+  "devDependencies": {
+    "purgecss": "^4.0.3"
+  }
+}
