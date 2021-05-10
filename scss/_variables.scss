@@ -1,0 +1,34 @@
+$bg-color: white;
+$size: 1.4em;
+$color: black;
+$oliva: rgba(55, 92, 7, 0.781);
+$font: Candara, Calibri, Segoe, Segoe UI, Optima, Arial, sans-serif;
+$padd: 2em;
+$olivadebil: rgba(61, 90, 24, 0.733);
+
+
+
+@mixin botones {
+    color:whitesmoke;
+    background: $olivadebil;
+    border-color: $oliva;
+}
+
+@mixin botonesEnviar{
+        @include botones;
+        margin-bottom: ($padd * 3);
+        align-self: center;
+}
+
+@mixin accordiones{
+    font-size: 18px;
+    color: $bg-color;
+    background-color: transparent;
+}
+
+@mixin textAbogados{
+    padding: $size;
+    text-align: center;
+    color: $bg-color;
+    margin-bottom: 0;  
+}

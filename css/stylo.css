@@ -1,0 +1,403 @@
+#superior {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 100px;
+  width: 100%;
+  margin: 0 auto;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+#superior .superior__link {
+  margin: 1em;
+  width: 25%;
+}
+#superior .superior__link .linkConsulta {
+  text-decoration: none;
+  color: black;
+  font-style: bold;
+  font-size: 20px;
+}
+#superior .superior__link :hover {
+  background: #6f7ed4;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: white;
+  font-size: 1.2em;
+}
+#superior .superior__titulo {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  margin-top: 3em;
+  width: 100%;
+}
+#superior .superior__titulo .tit {
+  font-size: 35px;
+  color: black;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-name: "tit";
+          animation-name: "tit";
+}
+#superior .superior__numero {
+  margin: 1em;
+  width: 25%;
+}
+#superior .superior__numero .num {
+  text-decoration: none;
+  color: black;
+  font-size: 35px;
+}
+#superior .superior__numero :hover {
+  -webkit-transform: translateX(-50px);
+          transform: translateX(-50px);
+  -webkit-transition: all 3s;
+  transition: all 3s;
+}
+
+.navB {
+  width: 100%;
+  margin-top: 2em;
+}
+.navB .nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 0;
+  background-color: #7685dd;
+}
+.navB .nav .secciones {
+  list-style: none;
+  font-size: 19px;
+  height: 2em;
+  text-transform: uppercase;
+  margin-top: 1em;
+}
+.navB .nav .secciones .item {
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.navB .nav .secciones :hover {
+  background: #6f7ed4;
+  color: black;
+  height: 2em;
+}
+
+#servicios {
+  background-image: url("..media/bogas.jpg");
+  background-repeat: no-repeat;
+  background-size: auto;
+  width: 100%;
+  margin: 0 0;
+  height: auto;
+  display: grid;
+  grid-template-areas: "servicios__cajon1 . servicios__cajon2" "servicios__cajon1 servicios__cajon3 servicios__cajon2";
+  grid-template-columns: 2fr 6fr 2fr;
+  grid-template-rows: auto auto;
+  gap: 3px 3px;
+}
+#servicios .servicios__cajon1 {
+  grid-area: servicios__cajon1;
+  margin-left: 2em;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  margin-top: 4em;
+  margin-bottom: 4em;
+}
+#servicios .servicios__cajon1 .bienvenida {
+  font-size: 25px;
+  font-style: bold;
+}
+#servicios .servicios__cajon1 .presentacion {
+  padding: 2em;
+  font-size: 18px;
+  font-style: italic;
+}
+#servicios .servicios__cajon2 {
+  grid-area: servicios__cajon2;
+  margin-right: 1em;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  margin-top: 10em;
+  margin-bottom: 4em;
+}
+#servicios .servicios__cajon2 .especialidades {
+  font-size: 18px;
+  padding: 1em;
+}
+#servicios .servicios__cajon3 {
+  grid-area: servicios__cajon3;
+  margin-bottom: 1.5em;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+#servicios .servicios__cajon3 .row {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+#servicios .servicios__cajon3 .row .card-body {
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+}
+#servicios .servicios__cajon3 .row .card-title {
+  text-align: center;
+}
+#servicios .servicios__cajon3 .row #modal1 .modal-content {
+  background-color: white;
+  opacity: 0.8;
+}
+#servicios .servicios__cajon3 .row #modal1 .modal-content .modal-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-flow: wrap;
+      flex-flow: wrap;
+}
+#servicios .servicios__cajon3 .row #modal1 .modal-content .modal-body .modal-img {
+  padding: 1em;
+  height: auto;
+}
+#servicios .servicios__cajon3 .row #modal1 .modal-content .modal-body .modal-text {
+  padding: 1em;
+  color: black;
+  font-size: 13px;
+}
+#servicios .servicios__cajon3 .row #modal2 .modal-content {
+  background-color: white;
+  opacity: 0.8;
+}
+#servicios .servicios__cajon3 .row #modal2 .modal-content .modal-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-flow: wrap;
+      flex-flow: wrap;
+}
+#servicios .servicios__cajon3 .row #modal2 .modal-content .modal-body .modal-img {
+  padding: 1em;
+  height: auto;
+}
+#servicios .servicios__cajon3 .row #modal2 .modal-content .modal-body .modal-text {
+  padding: 1em;
+  color: black;
+  font-size: 13px;
+}
+#servicios .servicios__cajon3 .row #modal3 .modal-content {
+  background-color: white;
+  opacity: 0.8;
+}
+#servicios .servicios__cajon3 .row #modal3 .modal-content .modal-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-flow: wrap;
+      flex-flow: wrap;
+}
+#servicios .servicios__cajon3 .row #modal3 .modal-content .modal-body .modal-img {
+  padding: 1em;
+  height: auto;
+}
+#servicios .servicios__cajon3 .row #modal3 .modal-content .modal-body .modal-text {
+  padding: 1em;
+  color: black;
+  font-size: 13px;
+}
+#servicios .servicios__cajon3 .row .btn {
+  color: whitesmoke;
+  background: #6f7ed4;
+  border-color: #6f7ed4;
+}
+
+@media (max-width: 768px) {
+  .navB {
+    display: block;
+  }
+  .navB .nav {
+    height: 3em;
+  }
+  .navB .nav .secciones {
+    font-size: 12px;
+    padding-top: -3em;
+  }
+
+  .superior {
+    display: block;
+  }
+  .superior .superior__titulo {
+    margin-top: auto;
+  }
+  .superior .superior__titulo .tit {
+    text-align: justify;
+    font-size: 18px;
+  }
+
+  .superior__link .linkConsulta {
+    font-size: 15px;
+  }
+
+  .superior__numero {
+    margin-right: 0;
+    margin-top: 0;
+  }
+  .superior__numero .num {
+    padding: 0px;
+  }
+  .superior__numero .num :hover {
+    -webkit-transform: none;
+            transform: none;
+  }
+
+  .servicios__cajon3 {
+    display: none;
+  }
+
+  .servicios__cajon1 {
+    width: 100%;
+    margin: 1em;
+    padding: 0;
+  }
+
+  .servicios__cajon2 {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 100%;
+  }
+}
+@media (max-width: 425px) {
+  .navB {
+    height: 5em;
+    display: block;
+    margin-top: 5em;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .navB .nav {
+    margin-top: 5em;
+    height: 5em;
+  }
+  .navB .nav .secciones {
+    font-size: 0px;
+    height: -2em;
+    text-transform: uppercase;
+    padding: 0;
+    line-height: -1pt;
+  }
+  .navB .nav .secciones .items {
+    font-size: 8px;
+  }
+
+  .superior {
+    display: block;
+  }
+  .superior .superior__titulo .tit {
+    font-size: 12px;
+    padding: 1em;
+  }
+  .superior .superior__link .linkConsulta {
+    font-size: 8px;
+  }
+  .superior .superior__numero {
+    margin-right: 0;
+    margin-top: 0;
+  }
+  .superior .superior__numero .num {
+    padding: 0px;
+    margin-right: 0;
+  }
+  .superior .superior__numero :hover {
+    -webkit-transform: none;
+            transform: none;
+  }
+
+  .servicios__cajon3 {
+    display: none;
+  }
+
+  .servicios__cajon1 {
+    width: 100%;
+    margin: 1em;
+    padding: 0;
+  }
+
+  .servicios__cajon2 {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 100%;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow-x: hidden;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  color: black;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.pie {
+  height: 55px;
+  width: 100%;
+  text-align: center;
+  color: black;
+  background: linear-gradient(45deg, #6fbb73, #8294f7);
+  z-index: -1;
+  padding-top: 1em;
+  font-style: italic;
+}
+
+@-webkit-keyframes tit {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 2;
+  }
+}
+
+@keyframes tit {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 2;
+  }
+}/*# sourceMappingURL=stylo.css.map */

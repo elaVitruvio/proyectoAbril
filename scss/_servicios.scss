@@ -1,0 +1,163 @@
+
+#servicios{
+    background-image: url("../media/abogar.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    margin: 0 0;
+    height: auto;
+    display: grid;
+    grid-template-areas: "servicios__cajon1 . servicios__cajon2"
+                        "servicios__cajon1 servicios__cajon3 servicios__cajon2";
+    grid-template-columns: 2fr 6fr 2fr;
+    grid-template-rows: auto auto; 
+    gap: 3px 3px; 
+    .servicios__cajon1{
+        grid-area: servicios__cajon1; 
+        margin: ($padd*2) 0;
+        margin-left: $size;
+        background-color: $olivadebil;
+        color: $bg-color;
+        .bienvenida{  
+            font-size: 25px;
+            font-weight: bold;
+            padding: $padd;                     
+            }
+        .presentacion{
+            font-size: 18px;
+            font-style: italic;
+            text-align: center; 
+            padding: $padd;  
+            a {
+                text-decoration: none;       
+                color: $bg-color;
+                font-style: bold;
+                font-size: 20px;
+                :hover{
+                    background: $olivadebil;
+                    color: $bg-color;
+                }
+            }
+        }
+    }
+    .servicios__cajon2 {
+        grid-area: servicios__cajon2;
+        margin-top: 10em;
+        margin-bottom: auto;
+        margin-right: $size;
+        background-color: $olivadebil;
+        color: $bg-color;
+        width: 238px;
+        .especialidades{
+            text-align: center;
+            padding-top: $padd;
+            background-color: $olivadebil;
+            color: $bg-color;
+            
+            h3{                
+                font-size: 24px; 
+                padding-top: 5px;
+                font-weight: bold;
+            }
+        }
+        #accordionFlushExample{
+            padding: 5px;
+            padding-top: $size;
+            width: 238px;
+            .accordion-item{
+                font-size: large;
+                text-align: right;
+                @include accordiones;
+            }
+            .accordion-button{
+                @include accordiones;
+                border: 1px solid grey;            
+            }
+            .accordion-collapse{
+                @include accordiones;
+            }                        
+        }
+    }
+    .servicios__cajon3{
+        grid-area: servicios__cajon3;
+        height: max-content;
+        .row{
+            display: flex;
+            justify-content: center;
+            padding-bottom: $size;                      
+            #columna{
+                align-self: flex-end;
+                align-content: center;
+                #tarjeta{                    
+                    background-color: $olivadebil;
+                    color: $bg-color;
+                    .card-body{
+                        padding: 4px;
+                        align-self: center;                     
+                    }
+                    .card-title{
+                        text-align: center;
+                        font-size: 25px;
+                    }
+                    .card-text{
+                        width: auto;
+                        text-align: center;
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+    }
+}    
+
+
+@media (max-width: 768px){
+    #servicios{
+        .servicios__cajon3{
+            display: none;
+        }
+        .servicios__cajon1{
+            width: 98%;
+            margin: $size;
+            padding: 0;
+        }
+        .servicios__cajon2{
+            flex-direction: row;
+            width: 98%;
+            #especialidades{
+                h3{
+                    font-size: 20px; 
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 425px){
+    
+    #servicios{          
+        .servicios__cajon1{
+            margin-left: $size;
+            margin-top: $padd*2;
+            margin-bottom: $padd*2; 
+            .bienvenida{  
+                font-size: 15px;
+            }
+            .presentacion{
+                padding: 0;
+                font-size: 13px;        
+            }
+        }
+        .servicios__cajon2 {            
+            margin-top: 6em;
+            padding: 2px;
+            #especialidades{
+                h3{
+                    font-size: 17px; 
+                    text-align: center;
+                    padding-top: $padd;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,229 @@
+@import "variables";
+@import "superior";
+@import "navBar";
+@import "servicios";
+@import "mediaq";
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    overflow-x: hidden;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: $bg-color;
+    color: $color;
+    font-family: $font;
+
+    .pie{
+        height: 36px;
+        width: 100%;
+        text-align: center;
+        color: $bg-color; 
+        background: $oliva;
+        z-index: -1;
+        padding-top: $padd /2;
+        font-style:italic;
+        font-size: 15px;
+    }
+
+//autogestion
+
+    .jubilacion{
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        justify-content: center;
+        margin: $size* 2;       
+        h3{
+            padding: $size;
+            text-align: center;
+            color: $olivadebil;
+            font-size: 2em;
+        }
+        p{
+            text-align: center;
+        }
+        #importante{
+            font-size: 0.85em;
+        }
+        .form-group{
+            text-align: center;
+            padding: $size;
+            padding-bottom: 2em;
+            label{
+                font-style: oblique;
+                font-weight:bold ;
+                }
+            .form-check{
+                width: 50%;
+                padding-top: $padd;
+                margin-left: $padd *4; 
+            }
+        }
+        #btnEnviar{
+                margin: 0 !important;
+            }
+        }
+    .btn{
+        @include botonesEnviar;
+        width: 25%;
+        margin-left: 38%;
+        margin-top: $padd;
+    } 
+
+// abogados
+
+    .row{
+        width: 100%;
+        margin: 0 0;
+        text-align: center;
+        .col{
+            border: solid white 1em;
+            background-color: $olivadebil;       
+              
+            h5{
+               @include textAbogados;
+            }
+            p{ 
+                @include textAbogados;
+                img{
+                    width: 70%;
+                    margin-top: $padd;
+                }              
+            }
+            
+        }
+    }
+
+
+// contacto
+
+    .formularioDeContacto{
+            
+        background-image: url("../media/abogara.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        margin: 0 0;
+        padding-top: $padd * 3;
+        height: 850px;
+        display: flex;
+        flex-direction: column;
+        #formulario_area{
+            margin-left: 47%;
+            width: 50%;
+            padding-top: $padd;
+        }
+        #formulario_consulta{
+            padding: $padd;
+            padding-bottom: $size;
+            height: 35%;
+            span{
+                background: $olivadebil;
+                font-size: large;
+                border: $oliva;
+                color: $bg-color;
+            }
+        }
+        #formulario_numero{
+            #telContacto{
+                width: 650px;
+            }
+            padding: $padd;
+            span{
+                background: $olivadebil;
+                font-size: large;
+                border: $oliva;
+                color: $bg-color;
+            }
+        }          
+        .btn{
+            @include botones;
+            margin-bottom: $size + 1em;
+            margin-left: 0;
+        }
+    
+        .mapas{
+            width: min-content;
+            align-self: center;
+            justify-self: stretch;
+            margin-bottom: 1em;
+        }
+    }
+
+// sobreNos
+
+    .sobreNos{
+        display: flex;
+        flex-direction: row;
+        padding: $padd 0;
+        .sobreNos_texto{
+            width: 52%;
+            margin: $padd;
+            padding-bottom: $padd;
+            h2{
+                margin-bottom: $padd;
+            }
+            p{
+                text-indent: 2em;
+            }
+        }
+        .sobreNos_iconos{
+            padding: $size !important;
+            h5{
+                text-align:end;
+                }
+            width: 45%;
+            padding: $size;
+            margin-top: $padd *2;
+            .list-group{
+                #lista_grupo{
+                    h3{
+                        text-align:end !important;
+                        font-size: large !important; 
+                    }
+                    p{
+                        text-align:end !important;
+                        font-size: medium !important;   
+                    }
+                }
+            }
+        }
+    }
+    #sobreNos_pie{
+        .row{
+            #col{
+                height: 270px;
+                padding-right: 0; 
+                .card{
+                    display:flex;
+                        flex-direction: column;
+                        align-content: stretch;
+                    .card-body{
+                        
+                        a{
+                            margin: auto;
+                            width: 10rem;
+                        }
+                    }
+                }
+            }
+        } 
+    }
+}       
+
+
+@keyframes tit{
+    0% {
+        opacity: 0;
+    }
+    100%{
+        opacity: 2;
+    }
+
+}

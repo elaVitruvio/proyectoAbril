@@ -1,0 +1,106 @@
+
+
+#superior{
+    display: flex;
+    justify-content: space-between;
+    height: 110px;
+    width: 100%;
+    margin: 0 0;
+    align-items: stretch;
+    .superior__link{
+        width: 22%;
+        margin: $size; 
+        .linkConsulta{
+            text-decoration: none;       
+            color: $color;
+            font-style: bold;
+            font-size: 20px;
+            &:hover{
+                background: $olivadebil;
+                color: $bg-color;
+            }
+        }
+    } 
+    .superior__titulo{
+        justify-content: center;
+        align-content: top;
+        margin-top: $padd + 1;
+        width: auto; 
+        .tit{
+            align-self: center;
+            font-size: 35px;
+            color: $color;
+            animation-duration: 2s;
+            animation-name: "tit";
+        }
+    }
+    .superior__numero{
+        margin: $size;
+        width: 22%;  
+        .num{
+            text-decoration: none;
+            color: $color;
+            font-size: 35px;
+            text-align: right;
+            &:hover{                       
+                transform: translateX(-50px);
+                transition: all 3s;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px){
+    #superior{   
+        height: 110px;
+        .superior__titulo{
+            margin-top: $padd+ 1em;  
+            .tit{
+                text-align:center;
+                font-size: 30px;
+                }
+            }
+        }
+        .superior__link {        
+            &:hover{
+                background-color: $olivadebil;
+            }        
+        }
+        .superior__numero{
+            margin-right: 0;
+            margin-top: 0;
+            .num{ 
+                padding: 0px;
+            &:hover{
+                transform: none;
+            }
+        }
+    }
+}
+
+@media (max-width: 425px){
+    #superior{ 
+        height: auto; 
+        width: auto;
+        .superior__link{
+            background-color: rgba(111, 126, 212, 0.342);
+            .linkConsulta{
+                font-size: 11px;       
+            } 
+        }
+        .superior__titulo{
+            margin-top: 1.5em;
+            .tit{
+                font-size: 26px;
+                padding: .5em;
+                }
+        }
+        .superior__numero{
+            margin-right: 0;
+            margin-top: 0;
+            .num{
+                font-size: 30px;
+            }
+        }    
+    }
+}

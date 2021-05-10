@@ -1,0 +1,30 @@
+@media (max-width: 768px){
+    body{
+        clear: both;
+        margin: 0 0;
+        width: 100%;
+        .pie{
+            height: 28px;
+            font-size: 12px;
+        }
+        .fila{
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
+    }
+}
+
+@media (max-width: 425px){
+    body{
+        clear: both;
+        margin: 0 0;
+        width: 100%;
+        .sobreNos{
+            flex-wrap:wrap;
+        }
+        .pie{
+            height: 23px;
+            font-size: 10px;
+        }
+    }
+}
