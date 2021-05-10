@@ -25,7 +25,7 @@
                 <nav class = "navB">
                     <ul class = "nav">
                         <li class="secciones"><a class= "item" href = "index.html">Inicio</a></li>
-                        <li class="secciones"><a class= "item-active text-decoration-none" href = "autogestion.html">Autogestión</a></li>
+                        <li class="secciones"><a class= "item item-active" href = "autogestion.html">Autogestión</a></li>
                         <li class="secciones"><a class= "item" href = "abogados.html">Abogados</a></li>
                         <li class="secciones"><a class= "item" href = "contacto.html">Contacto</a></li>
                         <li class="secciones"><a class= "item" href = "sobrenos.html">Sobre nosotros</a></li>
@@ -150,7 +150,22 @@
                     <label class="form-check-label" for="form_benefno">No</label>
                 </div>
             </div>
-            <button type="button" class="btn" id="btnEnviar" data-bs-toggle="button">Enviar</button>          
+            <button type="button" id="btnEnviar" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Enviar Formulario
+            </button>
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Formulario Enviado!</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                    <div class="modal-body">
+                      Gracias por su consulta, nos contactaremos con usted en los próximos días para comentarle sus opciones.
+                    </div>
+                </div>
+            </div>
+        </div>              
         </form>
         <footer class = "pie">Todos los derechos reservados</footer>
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>

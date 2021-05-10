@@ -145,11 +145,11 @@
   color: white;
   font-family: Candara, Calibri, Segoe, Segoe UI, Optima, Arial, sans-serif;
 }
-.navB .nav .secciones .item :hover {
-  color: rgba(55, 92, 7, 0.781) !important;
+.navB .nav .secciones .item:hover {
+  color: rgba(55, 92, 7, 0.781);
   background-color: white;
 }
-.navB .nav .secciones .item :active {
+.navB .nav .secciones .item:active {
   color: rgba(55, 92, 7, 0.781);
 }
 
@@ -433,9 +433,9 @@ body .jubilacion .form-group label {
   font-weight: bold;
 }
 body .jubilacion .form-group .form-check {
-  width: 50%;
+  text-align: initial;
   padding-top: 2em;
-  margin-left: 8em;
+  margin-left: 45%;
 }
 body .jubilacion #btnEnviar {
   margin: 0 !important;
@@ -455,6 +455,7 @@ body .row {
   width: 100%;
   margin: 0 0;
   text-align: center;
+  padding: 1.4em 0;
 }
 body .row .col {
   border: solid white 1em;

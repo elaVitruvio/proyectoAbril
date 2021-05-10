@@ -18,15 +18,15 @@
                 text-decoration: none;
                 color: $bg-color;
                 font-family:$font;
-                :hover{
-                        color: $oliva !important;
-                        background-color: $bg-color;
+                &:hover{
+                    color: $oliva;
+                    background-color: $bg-color;
                     }
-                :active{
-                        color: $oliva;
-                    }     
-            }      
-        }
+                &:active{
+                    color: $oliva;
+                }     
+            }
+        }      
     }
 }
 

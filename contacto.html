@@ -26,7 +26,7 @@
                         <li class="secciones"><a class= "item" href = "index.html">Inicio</a></li>
                         <li class="secciones"><a class= "item" href = "autogestion.html">Autogestión</a></li>
                         <li class="secciones"><a class= "item" href = "abogados.html">Abogados</a></li>
-                        <li class="secciones"><a class= "item-active text-decoration-none" href = "contacto.html">Contacto</a></li>
+                        <li class="secciones"><a class= "item item-active" href = "contacto.html">Contacto</a></li>
                         <li class="secciones"><a class= "item" href = "sobrenos.html">Sobre nosotros</a></li>
                     </ul>
                 </nav>
@@ -50,8 +50,21 @@
                 <span class = "input-group-text" id="addon-wrapping">Número de Contacto: </span>
                 <input type="tel" class="form-control" id="telContacto" placeholder="Télefono" aria-label="Username" aria-describedby="addon-wrapping">
             </div>
-            <button type="button" class="btn" data-bs-toggle="input">Enviar</button>
-        
+            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Enviar
+            </button>
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Formulario Enviado!</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                    <div class="modal-body">
+                      Gracias por su consulta, nos contactaremos con usted en los próximos días.
+                    </div>
+                </div>
+            </div>
             <section class ="mapas">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4647.786555348535!2d-58.71266734980122!3d-34.541365032841036!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcbd6cf1b1c5ad%3A0xcfd0904fb8d42704!2sDomingo%20Faustino%20Sarmiento%20%26%20Julio%20A.%20Roca%2C%20San%20Miguel%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1619622186439!5m2!1ses-419!2sar" widht="100" style="border:0;"  loading="lazy"></iframe>
                 <iframe src="https://www.google.com/maps/embed?pb=!4v1619614541205!6m8!1m7!1s4TmBhPLMXkPUGyv7gKuI0Q!2m2!1d-34.54014151322102!2d-58.71682979461848!3f2.6710522696924954!4f2.2118995508476758!5f1.190901584536151" widht="100" style="border:0;" loading="lazy"></iframe>
